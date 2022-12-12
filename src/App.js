@@ -1,5 +1,3 @@
-// DO NOT DELETE
-
 import * as React from 'react'
 import './App.css'
 
@@ -10,7 +8,7 @@ import './App.css'
 export const App = () => {
   return (
     <div>
-      <h2>Hello, world!</h2>
+      <header>Dogアプリ</header>
     </div>
   )
 }
