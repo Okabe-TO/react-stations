@@ -9,7 +9,6 @@ import './App.css';
  */
 
 export const App = () => {
-  const image = document.getElementById('image');
   /**
    * @type {string, void()} 左がURL, 右がURLをセットする関数
    */
@@ -44,18 +43,22 @@ export const App = () => {
   }
 
   return (
-    <div>
+    <div className='frame'>
       <header>Dogアプリ</header>
-      <p>
+      <p className='explanation'>
         犬の画像を表示するサイトです
       </p>
 
-      <img id="image" src={dogUrl}/>
+      <div className='image-container'>
+        <img className='image' src={dogUrl} />
+      </div>
       <br/>
 
-      <button onClick={ apdateUrl }>
-        更新
-      </button>
+      <div className='button-container'>
+        <button className='button' onClick={apdateUrl}>
+          更新
+        </button>
+      </div>
     </div>
   );
 }
