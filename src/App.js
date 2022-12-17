@@ -18,9 +18,9 @@ export const App = () => {
   );
   
   /**
-   * fetchし，得た新たなデータをdogUrlに代入する無名関数をapdateUrlとして宣言
+   * fetchし，得た新たなデータをdogUrlに代入する無名関数をupdateUrlとして宣言
    * */
-  const apdateUrl = () => {
+  const updateUrl = () => {
     fetch('https://dog.ceo/api/breeds/image/random')
       .then((response) => {
         if (!response.ok) {
@@ -55,7 +55,7 @@ export const App = () => {
       <br/>
 
       <div className='button-container'>
-        <button className='button' onClick={apdateUrl}>
+        <button className='button' onClick={updateUrl}>
           更新
         </button>
       </div>
