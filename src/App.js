@@ -10,7 +10,7 @@ import { Description } from './Description';
 
 export const App = () => {
   return (
-    <div className='frame'>
+    <div className='Frame'>
       < Header />
       < Description /> 
     </div>

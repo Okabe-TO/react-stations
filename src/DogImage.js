@@ -1,8 +1,18 @@
 // DO NOT DELETE
 import * as React from 'react'
 
-export function DogImage(props) {
+export const DogImage = (props) => {
+  // 犬種を抽出
+  const dogBreed = (props.url).split(/\/+/).slice(3, 4);
+  const dogUrl = props.url;
   return(
-    <img className='image' src={props.name} alt="dogImage" />
+    // ここのコンポーネントの抽出したい
+    <>
+      <img className='Image'
+        src={ dogUrl }
+        alt={dogBreed}
+      /><br />
+      犬種 : { dogBreed }
+    </>
   );
 }

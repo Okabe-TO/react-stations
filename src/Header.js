@@ -1,7 +1,7 @@
 // DO NOT DELETE
 import * as React from 'react'
 
-export function Header () {
+export const Header = () => {
   return (
     <header>Dogアプリ</header>
   );
