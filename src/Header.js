@@ -2,7 +2,7 @@
 import * as React from 'react'
 
 export const Header = () => {
-  return (
-    <header>Dogアプリ</header>
-  );
+	return (
+		<header>Dogアプリ</header>
+	)
 }
